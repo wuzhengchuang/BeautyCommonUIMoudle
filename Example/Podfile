@@ -1,10 +1,8 @@
 use_frameworks!
-
+source 'https://github.com/wuzhengchuang/BeautySpec.git'
 platform :ios, '8.0'
-
 target 'BeautyCommonUIMoudle_Example' do
   pod 'BeautyCommonUIMoudle', :path => '../'
-
   target 'BeautyCommonUIMoudle_Tests' do
     inherit! :search_paths
 

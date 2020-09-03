@@ -1,0 +1,34 @@
+{
+  "name": "BeautyCommonUIMoudle",
+  "version": "0.0.1",
+  "summary": "美颜公共UI控件",
+  "description": "TODO: 美颜项目公共UI控件",
+  "homepage": "https://github.com/wuzhengchuang/BeautyCommonUIMoudle",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "1244775319@qq.com": "1244775319@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/wuzhengchuang/BeautyCommonUIMoudle.git",
+    "tag": "0.0.1"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "BeautyCommonUIMoudle/Classes/*{h,m,xib}",
+  "dependencies": {
+    "Masonry": [
+
+    ],
+    "BeautyMacroMoudle": [
+
+    ]
+  },
+  "prefix_header_contents": [
+    "#import \"Masonry.h\"",
+    "#import \"Macro.h\""
+  ]
+}

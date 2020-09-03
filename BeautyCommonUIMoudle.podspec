@@ -8,35 +8,33 @@
 
 Pod::Spec.new do |s|
   s.name             = 'BeautyCommonUIMoudle'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of BeautyCommonUIMoudle.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
+  s.version          = '0.0.1'
+  s.summary          = '美颜公共UI控件'
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+TODO: 美颜项目公共UI控件
                        DESC
-
-  s.homepage         = 'https://github.com/1244775319@qq.com/BeautyCommonUIMoudle'
+  s.homepage         = 'https://github.com/wuzhengchuang/BeautyCommonUIMoudle'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { '1244775319@qq.com' => '1244775319@qq.com' }
-  s.source           = { :git => 'https://github.com/1244775319@qq.com/BeautyCommonUIMoudle.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/wuzhengchuang/BeautyCommonUIMoudle.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'BeautyCommonUIMoudle/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'BeautyCommonUIMoudle' => ['BeautyCommonUIMoudle/Assets/*.png']
-  # }
-
+  s.source_files = 'BeautyCommonUIMoudle/Classes/*{h,m,xib}'
+#   s.resource_bundles = {
+#     'BeautyCommonUIMoudle' => ['BeautyCommonUIMoudle/Assets/*.png']
+#   }
+#  s.resource_bundles = {
+#    'BeautyCommonUIMoudle' => ['BeautyCommonUIMoudle/Assets/*.png']
+#  }
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'Masonry'
+  s.dependency 'BeautyMacroMoudle'
+  
+  
+  s.prefix_header_contents = '#import "Masonry.h"','#import "Macro.h"'
 end

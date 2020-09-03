@@ -7,7 +7,8 @@
 //
 
 #import "BEAUTYViewController.h"
-
+#import <Toast.h>
+#import <Masonry.h>
 @interface BEAUTYViewController ()
 
 @end
@@ -17,9 +18,14 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	
 }
-
+static int count = 0;
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    count++;
+    [[Toast manager]show:[NSString stringWithFormat:@"点击了提示框%d",count]];
+    
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
